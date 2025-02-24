@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:5173/#projects -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./MyPortfolio_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/images.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+  <style type="text/css" data-vite-dev-id="D:/Mern-Portfolio/my-portfolio/src/styles/navbar.css">/* src/styles/navbar.css */
+.navbar {
+  background: linear-gradient(135deg, #4a90e2, #357ab8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  font-size: 1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #357ab8;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem 0;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .menu-btn {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="D:/Mern-Portfolio/my-portfolio/src/styles/hero.css">/* src/styles/hero.css */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding-top: 70px; /* Offset if you have a fixed navbar */
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero span {
+  color: #ffd700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  padding: 0.8rem 2rem;
+  background: #ffd700;
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #e6c200;
+  transform: scale(1.05);
+}
+</style><style type="text/css" data-vite-dev-id="D:/Mern-Portfolio/my-portfolio/src/styles/about.css">/* src/styles/about.css */
+.about {
+  background: linear-gradient(135deg, #f0f2f5, #ffffff);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #357ab8;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  margin-top: 20px; /* Slight downward shift */
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  max-width: 700px;
+  font-size: 1.2rem;
+  color:white;
+  background-color: #879fb5;
+  text-align: left;
+  margin: 0 20px;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+  }
+  .about-text {
+    text-align: left;
+    padding-left: 40px;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="D:/Mern-Portfolio/my-portfolio/src/styles/projects.css">/* src/styles/projects.css */
+.projects {
+  background: #f9f9f9;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.view-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #357ab8;
+  color: #fff;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #2a5298;
+}
+</style><style type="text/css" data-vite-dev-id="D:/Mern-Portfolio/my-portfolio/src/styles/skills.css">/* src/styles/skills.css */
+.skills {
+  background: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: #f4f7f6;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card h3 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+</style><style type="text/css" data-vite-dev-id="D:/Mern-Portfolio/my-portfolio/src/styles/resume.css">/* src/styles/resume.css */
+.resume {
+  background: #f9f9f9;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.resume h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.resume p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: #357ab8;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.resume-button:hover {
+  background: #2a5298;
+}
+
+.resume-preview {
+  width: 80%;
+  height: 600px;
+  border: none;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+</style><style type="text/css" data-vite-dev-id="D:/Mern-Portfolio/my-portfolio/src/styles/contact.css">/* src/styles/contact.css */
+.contact {
+  background: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f4f7f6;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #357ab8;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 1rem;
+  background: #357ab8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #2a5298;
+}
+</style><style type="text/css" data-vite-dev-id="D:/Mern-Portfolio/my-portfolio/src/styles/footer.css">/* src/styles/footer.css */
+.footer {
+  background: #357ab8;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer .social-links {
+  margin: 1rem 0;
+}
+
+.footer .social-links a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #ffd700;
+}
+
+.back-to-top {
+  padding: 0.8rem 1.5rem;
+  background: #2a5298;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: #1e3c72;
+}
+</style><style type="text/css" data-vite-dev-id="D:/Mern-Portfolio/my-portfolio/src/styles/global.css">/* src/styles/global.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+</style></head>
+  <body>
+    <div id="root"><div class="App"><nav class="navbar"><h1 class="logo">MyPortfolio</h1><ul class="nav-links"><li><a href="http://localhost:5173/#home">Home</a></li><li><a href="http://localhost:5173/#about">About</a></li><li><a href="http://localhost:5173/#projects">Projects</a></li><li><a href="http://localhost:5173/#skills">Skills</a></li><li><a href="http://localhost:5173/#resume">Resume</a></li><li><a href="http://localhost:5173/#contact">Contact</a></li></ul><button class="menu-btn">☰</button></nav><section id="home" class="hero" style="background: url(&quot;/src/assets/MyPic.jpg&quot;) 5% center / cover no-repeat;"><h1>Hello, I'm <span>Sanjana Tiwari</span></h1><p><strong>Passionate Data Analyst</strong></p><a href="http://localhost:5173/#projects" class="cta-btn">View My Work</a></section><section id="about" class="about"><h2>About Me</h2><div class="about-content"><img alt="Sanjana Tiwari" class="about-image" src="./MyPortfolio_files/Sanjana.jpg"><div class="about-text"><p>Hello! I'm Sanjana Tiwari,Hello! I'm Sanjana Tiwari, a dedicated Data Analyst passionate about transforming raw data into actionable insights. I specialize in statistical analysis, data mining, and data visualization using tools like  Power BI, Python, SQL, and Tableau.</p><p>With a strong background across multiple industries, I have successfully developed data models, implemented machine learning algorithms, and delivered impactful business intelligence solutions. I thrive on solving complex challenges and continuously refining processes to achieve measurable results.</p></div></div></section><section id="projects" class="projects"><h2>Projects</h2> <br><div class="project-list"><div class="project-card"><img alt="Reliance Smart Sales" class="project-image" src="./MyPortfolio_files/RelianceProject.png"><h3>Reliance Smart Sales</h3><p>A impactful Dashboard of  an analytics</p><a href="https://github.com/sanjana13in/DataAnalyis_ReliancePBI.git" class="view-btn">View</a></div><div class="project-card"><img alt="Dashboard For Capstone HR Data" class="project-image" src="./MyPortfolio_files/CapstoneProject.png"><h3>Dashboard For Capstone HR Data</h3><p>An analytics dashboard.</p><a href="https://github.com/sanjana13in/PBI_Capstone.git" class="view-btn">View</a></div></div></section><section id="skills" class="skills"><h2>My Skills</h2><div class="skills-list"><div class="skill-card"><img alt="HTML CSS JS" class="skill-image" src="./MyPortfolio_files/HTML CSS JS.png"><h3>HTML CSS JS</h3></div><div class="skill-card"><img alt="PBI" class="skill-image" src="./MyPortfolio_files/PBI.jpg"><h3>PBI</h3></div><div class="skill-card"><img alt="Mysql" class="skill-image" src="./MyPortfolio_files/Mysql.png"><h3>Mysql</h3></div><div class="skill-card"><img alt="Python" class="skill-image" src="./MyPortfolio_files/Python.jpg"><h3>Python</h3></div><div class="skill-card"><img alt="Mern stack" class="skill-image" src="./MyPortfolio_files/Mern.png"><h3>Mern stack</h3></div></div></section><section id="resume" class="resume"><h2>My Resume</h2><p>Download my resume to learn more about my experience and skills.</p><a href="http://localhost:5173/Resume.pdf" download="Resume.pdf" class="resume-button">Download Resume</a></section><section id="contact" class="contact"><h2>Contact Me</h2><form class="contact-form"><input placeholder="Your Name" required="" type="text" value="" name="name"><input placeholder="Your Email" required="" type="email" value="" name="email"><textarea name="message" placeholder="Your Message" rows="5" required=""></textarea><button type="submit">Send Message</button></form></section><footer class="footer"><p>© 2025 Sanjana Tiwari. All Rights Reserved.</p><div class="social-links"><a href="https://github.com/sanjana13in"></a><a href="https://www.linkedin.com/in/sanjana-tiwari-955246259?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"></a><a href="https://www.instagram.com/sanjana19702?igsh=MmJwd2FwNmY3MjVz"></a><a href="mailto:sanjanatiwari025@gmail.com">Email</a></div><button class="back-to-top">⬆ Back to Top</button></footer></div></div>
+    <script type="module" src="./MyPortfolio_files/main.jsx"></script>
+  
+
+</body></html>
