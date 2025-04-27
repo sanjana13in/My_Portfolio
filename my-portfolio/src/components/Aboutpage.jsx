@@ -2,7 +2,7 @@
 import React from "react";
 import "../styles/about.css";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <section id="about" className="about">
       <span> <h2>About Me</h2></span>
@@ -21,15 +21,11 @@ const About = () => {
 
 
           </p>
-          <p>   I thrive on solving complex problems and uncovering hidden patterns within data. Whether it’s improving operational efficiency, identifying trends, or enhancing customer experiences, I am dedicated to delivering data-driven solutions that make an impact.
-
-
-
-</p>
+          <p>   I thrive on solving complex problems and uncovering hidden patterns within data. Whether it’s improving operational efficiency, identifying trends, or enhancing customer experiences, I am dedicated to delivering data-driven solutions that make an impact.</p>
         </div>
       </div>
     </section>
   );
 };
 
-export default About;
+export default AboutPage;

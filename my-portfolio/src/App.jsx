@@ -2,19 +2,19 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Aboutpage from "./components/AboutPage";
+import AboutPage from "./components/AboutPage";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Resume from "./components/resume";
+import Resume from "./components/Resume";
 import Contact from "./components/Contact";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      <Aboutpage/>
+      <AboutPage/>
       <Projects />
       <Skills />
       <Resume />
