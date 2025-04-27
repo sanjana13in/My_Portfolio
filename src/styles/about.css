@@ -1,0 +1,68 @@
+/* src/styles/about.css */
+.about {
+  background: linear-gradient(135deg, #f0f2f5, #ffffff);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #fafafe;
+  
+  background:linear-gradient(135deg, #174171, #e2e8ed);
+
+  letter-spacing: 1px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 6px solid #357ab8;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-top: 20px; /* Slight downward shift */
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  max-width: 700px;
+  font-size: 1.2rem;
+  color: white;
+  text-align: left;
+  margin: 0 20px;
+  background:linear-gradient(135deg, #174171, #e2e8ed);
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    text-align: left;
+  }
+  .about-text {
+    padding-left: 40px;
+  }
+  #Myself{
+    text-align: center;
+    justify-content: center;
+  
+  }
+}

@@ -1,0 +1,123 @@
+/* src/styles/hero.css */
+.hero {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(135deg, #1079f3, #e2e8ed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+  z-index: 0;
+}
+
+/* Adding a soft animated glow effect */
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.2);
+  top: 10%;
+  left: -50px;
+  border-radius: 50%;
+  filter: blur(100px);
+  animation: floating-glow 6s infinite alternate ease-in-out;
+}
+
+@keyframes floating-glow {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  100% {
+    transform: translateY(20px) translateX(20px);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 70px; /* Offset for fixed navbar */
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  line-height: 1.5;
+}
+
+/* Enhancing CTA Buttons */
+.cta-btn {
+  padding: 0.8rem 2rem;
+  background: #ffd700;
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn:hover {
+  background: #e6c200;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Button container for better spacing */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Social Icons Styling */
+.hero-socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero-socials a {
+  color: white;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-socials a:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+}
+#My{
+  color:#ffd700;
+  text-shadow: #0c0c0c;
+  scrollbar-shadow-color: gold;
+  text-transform: capitalize;
+  text-decoration-color: darkorange;
+}
